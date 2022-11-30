@@ -2,7 +2,7 @@ import { combineReducers } from '@reduxjs/toolkit';
 import meta from './meta';
 
 const reducer = combineReducers({
-    meta
+  meta,
 });
 
 export default reducer;

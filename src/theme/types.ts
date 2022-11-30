@@ -23,15 +23,15 @@ export type Radii = {
 };
 
 export type Shadows = {
-  default: (c1?: string, c2?: string)=> string;
-  level1: (c1?: string, c2?: string)=> string;
-  active: (c1?: string, c2?: string)=> string;
-  success: (c1?: string, c2?: string)=> string;
-  warning: (c1?: string, c2?: string)=> string;
-  focus: (c1?: string, c2?: string)=> string;
-  slider: (c1?: string, c2?: string)=> string;
-  inset: (c1?: string, c2?: string)=> string;
-  tooltip: (c1?: string, c2?: string)=> string;
+  default: (c1?: string, c2?: string) => string;
+  level1: (c1?: string, c2?: string) => string;
+  active: (c1?: string, c2?: string) => string;
+  success: (c1?: string, c2?: string) => string;
+  warning: (c1?: string, c2?: string) => string;
+  focus: (c1?: string, c2?: string) => string;
+  slider: (c1?: string, c2?: string) => string;
+  inset: (c1?: string, c2?: string) => string;
+  tooltip: (c1?: string, c2?: string) => string;
   button: (c1?: string, c2?: string) => string;
 };
 
@@ -93,4 +93,4 @@ export type ZIndices = {
   modal: number;
 };
 
-export type TThemes = Record<'dark' | 'light', TradeeTheme>
+export type TThemes = Record<'dark' | 'light', TradeeTheme>;

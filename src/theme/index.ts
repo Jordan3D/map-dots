@@ -3,7 +3,7 @@ import { TSidebarStyle } from '../components/Sidebar/types';
 import { TNoteStyle } from '../page/Notes/types';
 import { Breakpoints, Colors, MediaQueries, Radii, Shadows, Spacing, ZIndices } from './types';
 
-export interface TradeeTheme{
+export interface TradeeTheme {
   colors: Colors;
   breakpoints: Breakpoints;
   mediaQueries: MediaQueries;
@@ -15,7 +15,7 @@ export interface TradeeTheme{
   page: TPageStyle;
   note: TNoteStyle;
   padding: string;
-  fontSize: Record<string, string>
+  fontSize: Record<string, string>;
 }
 
 export { darkColors, lightColors } from './colors';

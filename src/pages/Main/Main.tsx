@@ -1,25 +1,26 @@
+import { Button } from '@mui/material';
 import { ReactElement } from 'react';
 import styled from 'styled-components';
+import Map from '../../components/Map/Map';
 import Page from '../../components/Page/Page';
 
 const Container = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  height: 100%;
-
-  .buttons {
-    display: flex;
-    padding: 2rem 0 3rem;
-  }
+  height: 100vh;
 `;
 
 const Main = (): ReactElement => {
+  console.log('Main');
+  return (
+    <Container className="main_page__root">
+      <Map />
+    </Container>
+  );
+};
 
-  return <Container className="main_page__root">
-
-  </Container>
-}
-
-const MainPage = (): ReactElement => <Page><Main /></Page>
+const MainPage = (): ReactElement => (
+  <Page>
+   <Main />
+  </Page>
+);
 
 export default MainPage;

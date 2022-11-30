@@ -3,7 +3,7 @@ import { Component, ReactElement } from 'react';
 import { Error } from '../../pages/Error';
 
 type Props = Readonly<{
-  children: ReactElement
+  children: ReactElement;
 }>;
 
 type State = Readonly<{
@@ -11,7 +11,6 @@ type State = Readonly<{
 }>;
 
 class ErrorBoundary extends Component<Props, State> {
-
   constructor(props: Props) {
     super(props);
 
@@ -35,15 +34,10 @@ class ErrorBoundary extends Component<Props, State> {
     const { hasError } = this.state;
 
     if (hasError)
-      return (
-        <Error
-          helmetTitle={'Something happend'}
-          backButtonHandler={this.reload}
-        />
-      );
+      return <Error helmetTitle={'Something happend'} backButtonHandler={this.reload} />;
 
     return children;
   }
 }
 
-export default ErrorBoundary
+export default ErrorBoundary;
